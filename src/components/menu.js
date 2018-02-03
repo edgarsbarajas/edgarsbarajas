@@ -21,6 +21,16 @@ class Menu extends React.Component{
     }
   }
 
+  renderSideNav(){
+    if(this.state.menuOpen){
+      return(
+        <div className="sidenav">
+
+        </div>
+      )
+    }
+  }
+
   handleButtonClick(){
     this.state.menuOpen === false ? this.setState({ menuOpen: true }) : this.setState({ menuOpen: false })
   }
@@ -28,6 +38,7 @@ class Menu extends React.Component{
   render(){
     return(
       <div className='menu'>
+        {this.renderSideNav()}
         <button onClick={() => {this.handleButtonClick()}}>{this.renderButton()}</button>
       </div>
     )
