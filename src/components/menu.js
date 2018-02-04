@@ -1,5 +1,7 @@
 import React from 'react'
 import '../styles/menu.css'
+import { fadeInLeft, fadeOutLeft } from 'react-animations';
+import Radium, {StyleRoot} from 'radium';
 
 class Menu extends React.Component{
 
@@ -24,13 +26,13 @@ class Menu extends React.Component{
   renderSideNav(){
     if(this.state.menuOpen){
       return(
-        <div className="sidenav">
+        <StyleRoot className="sidenav" style={styles.fadeInLeft}>
           <ul>
             <li>Projects</li>
             <li>Experience</li>
             <li>About Me</li>
           </ul>
-        </div>
+        </StyleRoot>
       )
     }
   }
@@ -46,6 +48,17 @@ class Menu extends React.Component{
         <button onClick={() => {this.handleButtonClick()}}>{this.renderButton()}</button>
       </div>
     )
+  }
+}
+
+const styles = {
+  fadeInLeft: {
+    animation: 'x .5s',
+    animationName: Radium.keyframes(fadeInLeft, 'fadeInLeft')
+  },
+  fadeOutLeft: {
+    animation: 'x .5s',
+    animationName: Radium.keyframes(fadeOutLeft, 'fadOutLeft')
   }
 }
 
