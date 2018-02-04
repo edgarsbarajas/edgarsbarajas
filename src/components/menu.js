@@ -25,7 +25,11 @@ class Menu extends React.Component{
     if(this.state.menuOpen){
       return(
         <div className="sidenav">
-
+          <ul>
+            <li>Projects</li>
+            <li>Experience</li>
+            <li>About Me</li>
+          </ul>
         </div>
       )
     }
