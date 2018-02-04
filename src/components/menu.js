@@ -28,9 +28,10 @@ class Menu extends React.Component{
       return(
         <StyleRoot className="sidenav" style={styles.fadeInLeft}>
           <ul>
+            <a href='#about-me'><li>About Me</li></a>
             <li>Projects</li>
             <li>Experience</li>
-            <li>About Me</li>
+            <li>Contact</li>
           </ul>
         </StyleRoot>
       )
