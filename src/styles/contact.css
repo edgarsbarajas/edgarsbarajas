@@ -22,16 +22,16 @@
 .contact .info {
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  /* justify-content: flex-start; */
+  width: 225px;
+  /* text-align: center; */
+  margin: 0 auto;
 }
-
 .contact .details {
   align-items: center;
-  margin: 10px 20%;
+  margin: 10px 0;
   text-shadow: 2px 2px 4px #00ffcc;
-}
-
-.contact .details {
   text-decoration: none;
   color: white;
 }

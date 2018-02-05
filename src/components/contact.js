@@ -8,13 +8,15 @@ const Contact = () => {
         GET <span>CONNECTED</span>
       </div>
       <div className='info flex'>
-        <a href='mailto:edgarsbarajas@me.com' className='flex details'>
-          <img src='/photos/contact/icons/email.png' alt='email'/>
-          <span>edgarsbarajas@me.com</span>
-        </a>
+        <div>
+          <a href='mailto:edgarsbarajas@me.com' className='flex details'>
+            <img src='/photos/contact/icons/email.png' alt='email'/>
+            <span>edgarsbarajas@me.com</span>
+          </a>
+        </div>
         <a href='tel:+19255863672' className='flex details'>
           <img src='/photos/contact/icons/phone.png' alt='phone'/>
-          <span>(925)586-3672</span>
+          <span>925.586.3672</span>
         </a>
         <a href='https://github.com/edgarsbarajas' className='flex details'>
           <img src='/photos/contact/icons/github.png' alt='github'/>
