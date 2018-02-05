@@ -11,10 +11,10 @@ class App extends Component {
     return (
       <div className="App">
         <Header/>
+        <Contact/>
         <AboutMe/>
         <Projects/>
         <Experience/>
-        <Contact/>
       </div>
     );
   }

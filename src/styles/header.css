@@ -3,6 +3,7 @@ header {
   min-height: 100vh;
   background: url("/photos/header/background.jpg");
   background-size: cover;
+  background-position: center bottom;
 }
 
 header img {
