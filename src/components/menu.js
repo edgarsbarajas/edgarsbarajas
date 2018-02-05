@@ -31,7 +31,7 @@ class Menu extends React.Component{
             <a href='#about-me'><li>About Me</li></a>
             <li>Projects</li>
             <li>Experience</li>
-            <li>Contact</li>
+            <a href='#contact'><li>Contact</li></a>
           </ul>
         </StyleRoot>
       )

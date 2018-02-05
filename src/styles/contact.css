@@ -1,4 +1,49 @@
 .contact {
   height: 800px;
-  background: yellow;
+  background: black;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.contact .get-connected {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.contact .get-connected span {
+  font-weight: 700;
+}
+
+.contact .flex {
+  display: flex;
+}
+
+.contact .info {
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  /* justify-content: flex-start; */
+  width: 225px;
+  /* text-align: center; */
+  margin: 0 auto;
+}
+.contact .details {
+  align-items: center;
+  margin: 10px 0;
+  text-shadow: 2px 2px 4px #00ffcc;
+  text-decoration: none;
+  color: white;
+}
+
+.contact .details:hover {
+  color: #00ffcc;
+}
+
+.contact .details img {
+  width: 30px;
+}
+
+.contact .details span {
+  margin-left: 10px;
 }
