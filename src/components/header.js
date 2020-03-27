@@ -11,6 +11,7 @@ const Header = () => {
     <header>
       <Menu/>
       <img src='/photos/header/logo.png' alt='logo'/>
+      <div className='circle'></div>
     </header>
   )
 }
