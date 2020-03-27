@@ -13,9 +13,37 @@ header img {
   top: 0; left: 0; bottom: 0; right: 0;
 }
 
+header .circle {
+ border-radius: 1000px;
+  width: 400px;
+  height: 400px;
+  border: solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  animation: load 3s infinite; 
+}
+
 /* iPad and up*/
 @media (min-width: 768px) {
   header img {
     width: 400px;
+  }
+}
+
+/* Anination */
+@keyframes load {
+  0% {
+   opacity: 1;
+   transform: translate(-50%, -50%) scale(1);
+   border-width: 12px;
+  }
+
+  100% {
+   opacity: 0;
+   transform: translate(-50%, -50%) scale(1.2);
+   border-width: 0px;
   }
 }
